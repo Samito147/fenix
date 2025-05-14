@@ -1,0 +1,87 @@
+/* 
+  style.css
+  Estilo principal da plataforma
+  Tema: Dark | Responsivo | Modular
+*/
+
+/* FLAG: RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+/* FLAG: LAYOUT CENTRAL */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* FLAG: HEADER */
+header {
+  background: linear-gradient(90deg, #121212, #1a1a1a);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+header h1 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+/* FLAG: CONTAINERS COM ESTILO */
+.container {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+.container:hover {
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.05);
+}
+
+/* FLAG: BOTÕES GERAIS */
+button {
+  background-color: #292929;
+  color: #f0f0f0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #3a3a3a;
+}
+
+/* FLAG: RESPONSIVIDADE */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+}
+
+/* FLAG: TRANSIÇÕES E DETALHES VISUAIS */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* FLAG: ESTRUTURA ESCALÁVEL */
+/* Componentes futuros podem ser adicionados aqui com facilidade */
