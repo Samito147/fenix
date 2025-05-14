@@ -1,0 +1,89 @@
+/* login.css - Estilização da tela de login com tema escuro moderno */
+
+/* Reset de margens + tela centralizada */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0e0e0e; /* Fundo escuro principal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #f2f2f2; /* Texto claro */
+}
+
+/* Estilo do card de login */
+.login-container {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8); /* Sombra para profundidade */
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Título centralizado */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Inputs com aparência moderna */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2a2a2a;
+  color: #f2f2f2;
+}
+
+/* Destaque ao focar no input */
+.login-container input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4f46e5; /* Cor roxa de foco */
+}
+
+/* Botão estilizado */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #4f46e5; /* Roxo principal */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Efeito hover no botão */
+.login-container button:hover {
+  background: #3730a3;
+}
+
+/* Link para registro */
+.login-container .register-link {
+  margin-top: 16px;
+  text-align: center;
+  display: block;
+  color: #cccccc;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.login-container .register-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
